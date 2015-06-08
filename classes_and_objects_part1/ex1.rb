@@ -30,6 +30,10 @@ class MyCar
 		puts "stopped"
 	end
 
+	def spray_paint(color)
+		@color = color
+	end
+
 end
 
 car = MyCar.new(2003,"gray","BMW")
@@ -43,6 +47,7 @@ puts car.color
 puts car.year
 puts car.model
 
-
+car.spray_paint("green")
+puts car.color
 
 
