@@ -4,6 +4,9 @@
 
 
 class MyCar 
+	attr_accessor :color
+	attr_reader :year, :model
+
 
 	def initialize (year, color,model )
 		@year = year
@@ -34,8 +37,11 @@ car.speed_up(20)
 car.blake(10)
 car.shut_down
 
-
-
+puts car.color
+car.color = "black"
+puts car.color
+puts car.year
+puts car.model
 
 
 
